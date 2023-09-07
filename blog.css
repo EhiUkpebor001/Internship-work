@@ -1,0 +1,182 @@
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;}
+
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.header {
+    text-align: center;
+    justify-content: center;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.header p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    margin: auto;
+    font-size: 16.1px;
+    line-height: 29px;
+}
+
+.first-body, .second-body {
+    padding: 20px;
+}
+
+#top {
+    /* width: 400px; */
+    height: 380px;
+
+    background: #D9D9D9;
+}
+
+.top-right p, .top-left p, .bottom-right p, .bottom-left p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#readMore{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    text-transform: uppercase;
+
+    width: 120px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    background: #00D1FF;
+    border-radius: 0px 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.top-left {
+    text-align: right;
+}
+
+#top2 {
+    height: 500px;
+
+    background: #D9D9D9;
+}
+
+.top-left p{
+    clear: both;
+}
+
+.second-body{
+    height: 650px;
+}
+
+#bottom {
+    height: 450px;
+
+    background: #D9D9D9;
+}
+
+.bottom-left {
+    text-align: right;
+}
+
+
+/* RESPONSIVENESS */
+
+@media (min-width: 768px){
+    .container {
+        margin: auto;
+        box-sizing: border-box;
+        width: 600px;
+    }
+}
+
+@media (min-width: 920px){
+
+    .container {
+        margin: auto;
+        box-sizing: border-box;
+        width: 900px;
+    }
+
+    .first-body, .second-body {
+        height: 1000px;
+        width: 850px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .top-right{
+        width: 400px;
+    } 
+
+    #top2{
+        width: 400px; 
+        float: right;
+    }
+
+    .top-left p{
+        width: 400px;
+    }
+
+    #bottom{
+        width: 500px;
+    }
+
+    .bottom-right p{
+        width: 500px;
+    }
+
+    .bottom-left{
+        width: 300px;
+    }
+}
