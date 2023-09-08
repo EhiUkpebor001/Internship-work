@@ -1,0 +1,66 @@
+body{
+    text-align: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 35rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    background-color: thistle;
+    padding: 20px;
+    border-radius: 15px;
+    border: 5px solid rgb(226, 122, 226);
+}
+
+.main-div{
+    display: flex;
+    border-bottom: 1px dashed gray;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    text-align: start;
+    /* border: 2px solid saddlebrown; */
+}
+
+input[type='checkbox']{
+    cursor: pointer;
+    /* border: 2px solid saddlebrown; */
+}
+
+.content{
+    display: inline-flex;
+    cursor: pointer;
+    width: 18vw;
+    /* border: 2px solid saddlebrown; */
+}
+
+#date{
+    display: inline;
+    font-size: small;
+    /* border: 2px solid saddlebrown; */
+    height: 12px;
+}
+
+button{
+    width: 70px;
+    height: 20px;
+    background: rgb(15, 116, 116);
+    color: #fff;
+    border-radius: 15px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.buttons i{
+    color: #2c0d0d;
+    padding: 10px 10px 0px 10px;
+    cursor: pointer;
+    margin-top: -5px;
+    /* border: 2px solid saddlebrown;*/
+}
+
+li{
+    border-bottom: 1px dashed gray;
+    text-align: start;
+}
