@@ -1,0 +1,110 @@
+
+body{
+    background-color: darkgray;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container{
+    margin: 30px auto;
+    width: 1010px;
+}
+
+header{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-style: oblique;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    background-color: fuchsia;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+nav ul{
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    padding: 5px;
+    margin-right: 80px;
+}
+
+nav section{
+    margin: 15px 20px;
+}
+
+input{
+    padding: 5px;
+    width: 250px;
+    border: none;
+}
+
+input::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+    background-color: black;
+    color: white;
+    margin-left: 5px;
+    padding: 3px;
+    width: 70px;
+    cursor: pointer;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    width: 697px;
+}
+
+h2{
+    text-align: center;
+}
+
+h2, h3{
+    font-style: oblique;
+}
+
+p{
+    line-height: 25px;
+}
+
+aside{
+    position: absolute;
+    background-color: fuchsia;
+    width: 280px;
+    padding: 5px;
+    height: 235px;
+    left: 1064px;
+    margin-left: -175px;
+}
+
+.top{
+    top: 145px;
+}
+
+.bottom{
+    top: 395px;
+}
+
+aside li{
+    margin-bottom: 5px;
+    line-height: 16px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+footer{
+    margin-top: 5px;
+    background-color: white;
+    padding: 20px 20px 20px 10px;
+}
