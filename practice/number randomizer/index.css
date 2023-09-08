@@ -1,0 +1,60 @@
+.container{
+    max-width: 450px;
+    background-color: aqua;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+marquee{
+    background-color: goldenrod;
+    color: aliceblue;
+}
+
+.range{
+    border-bottom: solid black 1px;
+    padding-bottom: 20px;
+    height: 95px;
+    text-align: center;
+    justify-content: center;
+}
+
+.range.right{
+    float: right;
+    border: none;
+}
+
+.tabFormat_head{
+    font-size: 18px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tr{
+    text-align: center;
+    justify-content: center;
+}
+
+td{
+    padding: 10px;
+}
+
+.zero{
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#zeroValues, #oneValues, #twoValues, #threeValues, #fourValues, #fiveValues, #sixValues, #sevenValues, #eightValues, #nineValues {
+    border-bottom: dashed black 2px;
+    padding: 5px;
+    display: none;
+}
+
+#tenValues, #twentyValues, #thirtyValues, #fortyValues, #fiftyValues, #sixtyValues, #seventyValues, #eightyValues, #ninetyValues, #hundredValues {
+    border-bottom: dashed black 2px;
+    padding: 5px;
+    display: none;
+}
