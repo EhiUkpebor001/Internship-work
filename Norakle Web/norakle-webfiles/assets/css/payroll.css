@@ -1,0 +1,643 @@
+/* GENERAL CSS */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.section-heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #095dd9;
+}
+
+.section-text {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.8px;
+  /* margin-top: 2rem; */
+  color: #000000;
+}
+
+.section-intro {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.bar {
+  height: 4px;
+  width: 85px;
+  background: #095dd9;
+  margin: 20px auto 25px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background: #ffffff;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: MOVE-BG;
+  animation-name: MOVE-BG;
+}
+
+.hover-effect1:hover {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.hover-effect1 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hover-effect1 i {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.hover-effect1:hover i {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(26, 38, 74, 0.14);
+  box-shadow: 0px 10px 30px 0px rgba(26, 38, 74, 0.14);
+  color: white;
+  background-color: #ffb116;
+}
+
+.cta-btn {
+  width: fit-content;
+  background-color: #ffb116;
+  margin: 50px auto 15px auto;
+  text-transform: uppercase;
+  font-family: "Nunito";
+  font-size: 1.125rem;
+  padding: 15px 20px;
+}
+
+.cta-btn:hover,
+.cta-btn:focus,
+.cta-btn:active {
+  background-color: #eef5ff !important;
+  color: #000000 !important;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.cta-btn:hover a {
+  color: #000000;
+}
+
+.cta-btn::after,
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: #eef5ff !important;
+  z-index: -1;
+  border-radius: 5px;
+}
+.cta-btn::after {
+  left: 0;
+}
+
+.cta-btn::before {
+  right: 0;
+}
+
+.cta-btn:hover::after,
+.cta-btn:hover::before {
+  width: 50%;
+}
+.cta-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/* GENERAL CSS END */
+
+/* HERO SECTION */
+
+.hero-heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: left;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.hero-heading-2 {
+  display: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: left;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.inventory-header .row {
+  padding-top: 50px;
+}
+.inventory-header .laptop-img {
+  position: relative;
+  top: 35px;
+  /* max-width: 800px; */
+  width: 100%;
+}
+.hero-intro {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.hero-intro2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  margin-top: 2rem;
+  color: #000000;
+  text-align: center;
+}
+
+.inventory-header {
+  background-color: #0d6efd;
+}
+
+/* HERO ENDS */
+
+/* stand out section */
+
+.stand-out-section i {
+  font-size: 40px;
+  color: #0d6efd;
+  background-color: #d0e3ff;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 60px;
+}
+
+.stand-out-section i:hover {
+  color: white;
+  background-color: #ffb116;
+}
+
+/* stand out section end */
+
+/* TABS START */
+.tabs-section {
+  margin-top: 150px;
+}
+
+.tabs-section .service {
+  border-radius: 5px;
+  padding: 34px 24px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.tabs-section .section-text {
+  margin-top: 0;
+}
+
+.tabs-section .section-intro {
+  margin-block: 17px !important;
+}
+
+.single-tab i {
+  font-size: 35px;
+  color: #0d6efd;
+  background-color: #d0e3ff;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 55px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.single-tab:hover i {
+  color: white;
+  background-color: #ffb116;
+}
+
+.single-tab:hover {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.single-tab {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.single-tab:hover i {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(26, 38, 74, 0.14);
+  box-shadow: 0px 10px 30px 0px rgba(26, 38, 74, 0.14);
+}
+
+/* TABS END */
+
+/* PAY EMPLOYEES */
+
+.employees-section img {
+  width: 100%;
+}
+
+/* PAY EMPLOYEES END */
+
+/* MINI FEATURES */
+
+.mini-features-section {
+  background-color: #eef5ff;
+  padding-block: 70px;
+}
+
+.mini-features-section .section-intro {
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.mini-features-section .mini-feature {
+  padding: 18px 22px;
+  border-radius: 10px;
+}
+
+/* MINI FEATURES END */
+
+/* FEATURES */
+
+.features-section .section-heading {
+  text-align: left;
+}
+
+.features-section img {
+  width: 100%;
+}
+
+.features-section .list-items {
+  list-style-type: disc;
+  line-height: 28px;
+}
+
+.feature {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* FEATURES END */
+
+/* NEW FEATURES */
+
+.new-features-section .new-feature {
+  background-color: #0d6efd;
+  height: 460px;
+  border-radius: 20px;
+}
+
+
+
+.new-features-section .new-feature-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px;
+  background-image: url("../images/Group\ 246.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  /* background-size: 50%; */
+}
+
+.new-features-section .new-feature-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px 60px;
+  background-image: url("../images/Group\ 247.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  /* background-size: 53%; */
+}
+.new-features-section .new-feature-right .list-items {
+  align-self: flex-end;
+}
+.new-features-section .list-items {
+  /* min-width: 220px; */
+}
+.new-features-section .list-items p {
+  color: #ffffff;
+}
+
+.new-features-section .list-items .list-item {
+  display: flex;
+  align-items: start;
+  gap: 7px;
+}
+.new-features-section .list-items .list-item img {
+  margin-top: 5px;
+}
+
+/* NEW FEATURES END */
+
+/* TESTIMONIAL SECTION */
+
+.testimonial-section {
+  background-color: #eef5ff;
+  padding: 50px 0px 50px 0px;
+}
+
+.testmonial-container {
+  background: #eef5ff;
+  padding: 44px 61px 10px 61px;
+}
+
+.testmonial-container:nth-of-type() {
+  background-color: red !important;
+}
+
+.testimonial {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.testimonial-client {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffb116;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.main-testimonial {
+  background: #eef5ff;
+  box-shadow: -2px 56px 63px #d8e6fc;
+}
+
+/* TESTIMONAL END */
+
+/* LOGO WALL */
+/* POPULAR BUSINESSES WE SERVE */
+
+#logo-wall {
+  text-align: left;
+}
+#logo-wall h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: left !important;
+  letter-spacing: 0.02em;
+  color: #095dd9;
+}
+
+#logo-wall img {
+  width: 100%;
+}
+
+/* LOGO WALL END */
+
+/* CTA SECTION */
+
+.cta-section {
+  /* Andrew changes  changes */
+  padding: 20px;
+}
+.cta {
+  background: linear-gradient(180deg, #0d6efd 54.69%, #0a53be 100%);
+  min-height: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+}
+
+.cta-heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.cta-text {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.call-to-action {
+  border-radius: 20px !important;
+}
+
+/* CTA  SECTION END */
+
+/* Extra small devices (phones, 600px and down) */
+/* MOBILE DESIGN */
+@media only screen and (max-width: 767px) {
+  .hero-intro {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 29px;
+    color: #ffffff;
+  }
+
+  .inventory-header .hero-heading-2 {
+    display: block;
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 43px;
+  }
+  .inventory-header .hero-intro {
+    font-size: 1.1rem;
+    line-height: 29px;
+  }
+  .inventory-header .hero-heading {
+    display: none;
+  }
+  .inventory-header .text-col {
+    text-align: center;
+  }
+  .feature {
+    text-align: center;
+    width: 100%;
+  }
+  .feature .section-intro {
+    text-align: center;
+  }
+  .tabs-section .single-tab {
+    text-align: center;
+  }
+  .tabs-section .section-intro {
+    text-align: center;
+  }
+}
+
+/* Andrew changes */
+/* Devices between screen size 1200px and 992px */
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* header .laptop-img {
+    position: absolute;
+    width: 700px;
+    right: 10px;
+    top: 120px;
+  } */
+
+  .inventory-header .hero-heading {
+    display: none;
+  }
+
+  .inventory-header .hero-heading-2 {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .inventory-header .hero-heading {
+    display: none;
+  }
+
+  .inventory-header .hero-heading-2 {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 28px;
+  }
+
+  .inventory-header .laptop-img {
+    /* position: absolute;
+    width: 550px;
+    right: 10px;
+    top: 110px; */
+  }
+  .hero-intro {
+    font-size: 0.9rem;
+    line-height: 23px;
+  }
+}
+
+/* Andrew changes ends */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+/*custom iphone retina David*/
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens David ends */
+@media only screen and (min-width: 1200px) {
+}
