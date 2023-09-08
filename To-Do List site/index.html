@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body bgcolor="skyblue">
+
+    <div class="container">
+        <h1><em><pre>TO DO LIST</pre></em></h1>
+        <p>
+            <em>Create a new task...</em>
+            <a href="./add.html"> <button> <i class="fa-sharp fa-solid fa-circle-plus fa-2sm"></i> ADD</button> </a>
+        </p>
+
+        <div class="main-div">
+            <div class="messages">
+                <input type="checkbox" name="checker" id="checker">
+                <span class="content" onclick="view()">hello</span>
+            </div>      
+            <div class="date">
+                <p id="date">12/05/23</p>
+            </div>
+            <div class="buttons" style="display: inline-flex;">
+                <i class="fa-solid fa-file-pen fa-2sm"></i>
+                <i class="fa-regular fa-copy fa-2sm"></i>
+                <i class="fa-solid fa-trash fa-2sm"></i>
+            </div> 
+        </div>
+
+        <div class="main-div">
+            <div class="messages">
+                <input type="checkbox" name="checker" id="checker">
+                <span class="content" onclick="view()">hello</span>
+            </div>      
+            <div class="date">
+                <p id="date">12/05/23</p>
+            </div>
+            <div class="buttons" style="display: inline-flex;">
+                <i class="fa-solid fa-file-pen fa-2sm"></i>
+                <i class="fa-regular fa-copy fa-2sm"></i>
+                <i class="fa-solid fa-trash fa-2sm"></i>
+            </div> 
+        </div>
+
+        <div class="main-div">
+            <div class="messages">
+                <input type="checkbox" name="checker" id="checker">
+                <span class="content" onclick="view()">hello, I need to work on my attire today </span>
+            </div>   
+            <div class="date">
+                <p id="date">12/05/23</p>
+            </div>
+            <div class="buttons" style="display: inline-flex;">
+                <i class="fa-solid fa-file-pen fa-2sm"></i>
+                <i class="fa-regular fa-copy fa-2sm"></i>
+                <i class="fa-solid fa-trash fa-2sm"></i>
+            </div> 
+        </div>
+
+        <hr>
+
+        <h2><em>COMPLETED TASKS</em></h2>
+
+        <div class="main-div">
+            <div class="messages">
+            <span class="content">hello</span>
+            </div>    
+            <div class="date">
+                <p id="date">12/05/23</p>
+            </div>  
+            <div class="buttons" style="display: inline-flex;">
+                <i class="fa-solid fa-rotate-left fa-2sm"></i>
+                <i class="fa-solid fa-trash fa-2sm"></i>
+            </div> 
+        </div>
+    </div>    
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
