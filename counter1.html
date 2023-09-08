@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Class</title>
+
+	<style type="text/css">
+		
+		button{
+			padding: 15px;
+			border-radius: 5px;
+			border: none;
+			color: white;
+			font-weight: bolder;
+			font-family: sans-serif;
+			font-size: 20px;
+			cursor: pointer;
+		}
+
+		#inc{
+			background-color: blue;
+		}
+
+		#dec{
+			background-color: red;
+		}
+
+		#counter{
+			font-size: 22px;
+			margin-left: 5%;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1>Counter App</h1>
+
+	<p id="counter">0</p>
+
+	<button id="inc" onclick="increment()">Increment</button>
+	<button id="dec" onclick="decrement()">Decrement</button>
+
+	<hr>
+
+	<input type="text" name="" value="0" id="input">
+	<br>
+	<br>
+
+	<button id="inc" onclick="increase()"> + </button>
+	<button id="dec" onclick="decrease()"> - </button>
+
+	<script type="text/javascript">
+
+		let counter = 0
+		let pCounter = document.getElementById("counter") 
+		let iCounter = document.getElementById("input")
+
+		function increment(){
+			counter += 1
+			pCounter.innerHTML = counter;
+		}
+
+		function decrement(){
+			counter -= 1
+			if (counter <= 0){
+				pCounter.innerHTML = 0
+			} else {
+				pCounter.innerHTML = counter;
+			}	
+		}
+
+		function increase(){
+			counter += 1
+			iCounter.value = counter;
+		}
+
+		function decrease(){
+			// counter -= 1
+			// iCounter.value = counter;
+
+			if(counter > 0){
+				counter -= 1
+				iCounter.value = counter
+			}
+		}
+
+	</script>
+
+</body>
+</html>
